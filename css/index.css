@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color: #F7F4F0;
+    margin: 0;
+}
+/*------------------------------------顶部导航栏*/
+.header{
+    width:100%;
+    height:60px;
+    background-color:white;
+}
+/*----------------------------------设置导航栏左侧logo*/
+.header .mylogo{
+    width: 20%;
+    text-align: right;
+    padding: 10px 0;
+    float: left;
+    margin-right: 20px;
+}
+/*---------------------------------设置导航栏中间的无序列表*/
+#mynavi{
+  
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:visible;
+}
+#mynavi li{
+  float: left;
+}
+#mynavi li a{
+    color:#0080b1;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    padding:5px 15px;
+    line-height: 60px;
+  }
+  /*-------------------------------设置搜索框*/
+.my_search{
+    float:left;
+    line-height: 60px;
+    margin-left: 300px;
+}
+input[type=text]{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-image: url('../images/search.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding:8px 30px 8px 10px;
+    margin-right:20px;
+} 
+/*-----------------------------------设置登录及注册*/
+.my_login{
+    line-height: 60px;
+}
+.my_login ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:visible;
+}
+.my_login ul li{
+    float: left;
+  }
+.my_login ul li a{
+    color:#0080b1;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    padding:0px 5px;
+  }
+  .my_login ul li a:hover{
+    color: red;
+ }
+   /*-----------------------------------------------------左侧数据-------------------------------------------------------------------------------*/
+  /*------------------------------------中部左侧及右侧数据*/
+  .main_content{
+    content: "";
+    display:table;
+    clear: both;
+    margin: 0 auto;
+    padding: 0 0;
+}
+   .column{
+      float: left;
+      margin-top: 20px;
+
+  }
+  .column .middle_left_content{
+    width: 80%;
+ }
+ .column .middle_right_content{
+    width: 20%;
+ }
+ .main_content:after{
+    content: "";
+    display:table;
+    clear: both;
+}
+ /*------------------------------------------------------------banner*/
+#a_cover{
+    display: block;
+    position: relative;
+    overflow: hidden;
+ } 
+#span_cover {
+    width: 850px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, .50);
+    color: #FFFFFF;
+    font-size: 16px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}  
+
+/*----------------------------------------------------标签数据*/
+.my_area{
+    background-color: white;
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 30px 0;
+    width: 850px;
+    height: 110px;
+}
+.my_area .my_area_tag{
+    list-style-type: none;
+    padding: 0 10px;
+}
+.my_area_tag li{
+   border: 1px solid #0080b1;
+   border-radius: 4px;
+   color: #0080b1;
+   float: left;
+   margin: 5px 10px;
+   padding: 3px 0;
+}
+.my_area_tag li a{
+    color: #0080b1;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 14px;
+ }
+ .my_area_tag li a:hover{
+    background-color:#1688ca;
+    color: white;
+ }
+  /*-----------------------------------------------数据列表*/
+  .my_data_list{
+    background-color: white;
+    overflow: hidden;
+    border-radius: 4px;
+    width: 850px;
+    margin-bottom: 200px;
+  }
+  .my_data_list h2{
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .new_blog{
+      color: #1688ca;
+      text-decoration: none;
+      padding: 0 10px;
+  }
+  .m_line{
+      color: #ccc;
+  }
+  .new_project{
+    text-decoration: none;
+    padding: 0 10px;
+    color: #000;
+  }
+  .my_data_list .my_data_list_line{
+    border-bottom: 2px solid #0080b1;
+  }
+  .my_data_item{
+    background-color: white;
+    overflow: hidden;
+    width: 850px;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+  }
+  .my_data_item .is_collect{
+    width: 50px;
+    height: 100%;
+    float: left;
+    border:0px solid #ececec;
+    margin: auto 15px;
+  }
+  .my_data_item .is_collect span.collect{
+    display:block;
+    height: 100px;
+    line-height: 100px;
+    background-image: url('../images/img_normal_collect.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+    cursor:pointer;
+}
+/********如果标题太长显示省略号的属性8******/
+.my_article_link p{
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  margin-right: 50px;
+}
+/***************************************/
+.my_article_link .title_link{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+.my_article_link .top_article{
+    color: red;
+    border: 1px solid red;
+    font-size: 12px;
+    padding: 1px 3px;
+    margin-right: 10px;
+}
+.my_article_link .article_new{
+    color: red;
+    border: 1px solid red;
+    font-size: 12px;
+    padding: 1px 3px;
+    margin-right: 10px;
+}
+.my_article_link .article_QA a{
+    text-decoration: none;
+    color: green;
+    border: 1px solid red;
+    font-size: 12px;
+    padding: 1px 3px;
+    margin-right: 10px;
+}
+.my_article_link .article_project a{
+   text-decoration: none;
+   color: green;
+   border: 1px solid red;
+   font-size: 12px;
+   padding: 1px 3px;
+   margin-right: 10px;
+}
+.my_article_link .article_author{
+    color: #ccc;
+    font-size: 12px;
+}
+.my_article_link .article_author a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.my_article_link .article_classify{
+    color: #ccc;
+    font-size: 12px;
+}
+.my_article_link .article_classify a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+.my_article_link .article_data{
+   color: #ccc;
+   font-size: 12px;
+   margin: 0 10px;
+}
+.my_article_link .article_project a:hover{
+  background-color: green;
+  color: white;
+}
+.my_article_link .article_QA a:hover{
+  background-color: green;
+  color: white;
+}
+.my_article_link .article_classify a:hover{
+  text-decoration: underline;
+  color: #0662eb;
+}
+.my_article_link .article_author a:hover{
+   text-decoration: underline;
+   color: #0662eb;
+}
+
+.my_article_link .title_link:hover{
+    color: #0662eb;
+    text-decoration: underline;
+}
+  .my_data_item .is_collect span.collect:hover{
+    background-image: url('../images/img_press_collect.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+  }
+  .my_data_item:hover{
+    background-color: rgb(252, 246, 246);
+  }
+ /*-----------------------------------------------------右侧数据-------------------------------------------------------------------------------*/
+ /*-----------------------------------------------中部右上第一行，分享项目，待办清单，本站开放API，草稿记事*/
+.right_first_content{
+    background-color: white;
+    width: 300px;
+    height: 240px;
+    overflow: hidden;
+    margin: 0px 120px 0px 30px;
+    border-radius: 4px;
+}
+.right_first_content a{
+   display: block;
+   background-color:#1694dd;
+   text-decoration: none;
+   text-align: center;
+   border-radius: 4px;
+   color:white;
+   padding: 10px 20px;
+   width: 180px;
+   margin: 15px auto;
+   cursor: pointer;
+}
+.right_first_content a:hover{
+    background-color:#1688ca;
+ }
+ /*-----------------------------------------------个人信息*/
+ .my_info{
+    background-color: white;
+    width: 300px;
+    height: 180px;
+    margin: 30px 120px 30px 30px;
+    border-radius: 4px;
+ }
+ .my_info h2{
+    height: 40px;
+    line-height: 40px;
+    font-weight: normal;
+    font-size: 16px;
+    overflow: hidden;
+    border-bottom: 2px solid #0080b1;
+    padding: 0 10px;
+ }
+ .my_info .my_info_list{
+    color:  #0080b1;
+ }
+ .my_info_list li{
+    margin: 6px 0;
+}
+ .my_info_list li a{
+     text-decoration: none;
+     color: rgb(138, 136, 136);
+     font-size: 14px;
+ }
+ .my_info_list li a span{
+    color: red;
+}
+.my_info_list li a:hover{
+    color: #1688ca;
+ }
+  /*-----------------------------------------便捷入口*/
+ .my_fast_enter{
+        background-color: white;
+        width: 300px;
+        height:370px;
+        margin: 30px 120px 30px 30px;
+        border-radius: 4px;
+ }
+ .my_fast_enter h2{
+        height: 40px;
+        line-height: 40px;
+        font-weight: normal;
+        font-size: 16px;
+        border-bottom: 2px solid #0080b1;
+        padding: 0 10px;
+ }
+.my_fast_enter a img{
+    margin: 2px 5px;
+ }
+  /*-------------------------------------------中部右侧常用工具*/
+ .my_used_tools{
+    background-color: white;
+    width: 300px;
+    height:300px;
+    margin: 30px 120px 30px 30px;
+    border-radius: 4px;
+  }
+  .my_used_tools h2{
+    height: 45px;
+    line-height: 45px;
+    font-weight: normal;
+    font-size: 16px;
+    border-bottom: 2px solid #0080b1;
+    padding: 0 10px;
+  }
+  .my_used_tools .my_used_tools_list{
+      list-style-type: none;
+      padding: 0 10px;
+  }
+  .my_used_tools_list li{
+    border-radius: 3px;
+    float: left;
+    margin: 5px 8px;
+    padding: 3px;
+}
+.my_used_tools_list li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+  /*中部右侧常用工具---------------------------------------------------不会随机取颜色，只能用笨方法，一个一个加背景颜色------------------------------*/
+.my_used_tools_list .tools1{
+   background-color: #5BB7DE;
+}
+.my_used_tools_list .tools2{
+    background-color: rgb(221, 166, 166);
+ }
+ .my_used_tools_list .tools3{
+    background-color:rgb(12, 240, 114);
+ }
+ .my_used_tools_list .tools4{
+    background-color: rgb(98, 124, 98);
+ }
+ .my_used_tools_list .tools5{
+    background-color: #FF9900;
+ }
+ .my_used_tools_list .tools6{
+    background-color: #5BB7DE;
+ }
+ .my_used_tools_list .tools7{
+    background-color: rgb(221, 166, 166);
+ }
+ .my_used_tools_list .tools8{
+    background-color: rgb(12, 240, 114);
+ }
+ .my_used_tools_list .tools9{
+    background-color: rgb(98, 124, 98);
+ }
+ .my_used_tools_list .tools10{
+    background-color: #FF9900;
+ }
+ .my_used_tools_list .tools11{
+    background-color: #5BB7DE;
+ }
+ .my_used_tools_list .tools12{
+    background-color: rgb(221, 166, 166);
+ }
+ .my_used_tools_list .tools13{
+    background-color: rgb(12, 240, 114);
+ }
+ .my_used_tools_list .tools14{
+    background-color: rgb(98, 124, 98);
+ }
+ .my_used_tools_list .tools15{
+    background-color: #FF9900;
+ }
+ .my_used_tools_list .tools16{
+    background-color: #5BB7DE;
+ }
+  /*--------------------------------------------------------------------------------------------------------------*/
+ .my_used_tools_list li a:hover{
+    background-color: rgba(0, 0, 0, .10);
+ }
+   /*------------------------------------------常用网站*/
+.my_used_website{
+    background-color: white;
+    width: 300px;
+    height:740px;
+    margin: 30px 120px 30px 30px;
+    border-radius: 4px;
+  }
+  .my_used_website h2{
+    height: 45px;
+    line-height: 45px;
+    font-weight: normal;
+    font-size: 16px;
+    border-bottom: 2px solid #0080b1;
+    padding: 0 10px;
+  }
+  .my_used_website .my_used_website_list{
+      list-style-type: none;
+      padding: 0 10px;
+  }
+  .my_used_website_list li{
+    float: left;
+    padding: 8px 10px;
+}
+.my_used_website_list li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.my_used_website_list li a:hover{
+    text-decoration: underline;
+}
+  /*------------------------------------------联系我们*/
+.contact_we{
+    background-color: white;
+    width: 300px;
+    height: 280px;
+    margin: 30px 120px 30px 30px;
+    border-radius: 4px;
+ }
+ .contact_we h2{
+    height: 40px;
+    line-height: 40px;
+    font-weight: normal;
+    font-size: 16px;
+    overflow: hidden;
+    border-bottom: 2px solid #0080b1;
+    padding: 0 10px;
+ }
+ .contact_we .contact_we_list{
+    color:  #0080b1;
+ }
+ .contact_we_list li{
+    margin: 6px 0;
+}
+ .contact_we_list li a{
+     text-decoration: none;
+     color: rgb(138, 136, 136);
+     font-size: 14px;
+ }
+.contact_we_list li a:hover{
+    color: #1688ca;
+ }
+  /*------------------------------------大家都在搜*/
+ .todo_search{
+     background-color: white;
+     width: 300px;
+     height: 160px;
+     border-radius: 4px;
+     margin: 30px 120px 30px 30px;
+ }
+ .todo_search h2{
+     font-weight: normal;
+     font-size: 16px;
+     height: 40px;
+     line-height: 40px;
+     overflow: hidden;
+     border-bottom:  2px solid #0080b1;
+     padding: 0 10px;
+ }
+ .todo_search ul{
+     list-style-type: none;
+     padding: 0 10px;
+ }
+ .todo_search ul li{
+     float: left;
+     margin: 5px 8px;
+}
+.todo_search ul li a{
+     color: #1688ca;
+     font-size: 14px;
+}
